@@ -1,0 +1,8 @@
+<!--pages/setting/setting.wxml-->
+<mp-navigation-bar loading="{{loading}}" show="{{true}}" animated="{{true}}" color="{{black}}" background="{{'white'}}"
+  title="{{'设置'}}" back="{{true}}">
+</mp-navigation-bar>
+
+<view class="page">
+  <text>pages/setting/setting.wxml</text>
+</view>

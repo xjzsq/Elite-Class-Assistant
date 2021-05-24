@@ -1,0 +1,8 @@
+<!--pages/njupt/njupt.wxml-->
+<mp-navigation-bar loading="{{loading}}" show="{{true}}" animated="{{true}}" color="{{black}}" background="{{'white'}}"
+  title="{{'智慧校园'}}" back="{{true}}">
+</mp-navigation-bar>
+
+<view class="page">
+  <text>pages/njupt/njupt.wxml</text>
+</view>

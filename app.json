@@ -2,6 +2,8 @@
   "pages":[
     "pages/assistant/assistant",
     "pages/information/information",
+    "pages/njupt/njupt",
+    "pages/setting/setting",
     "pages/index/index",
     "pages/logs/logs"
   ],

@@ -1,4 +1,22 @@
 /* pages/assistant/assistant.wxss */
+
+/* common */
+
+.icon-cell {
+  display: flex;
+}
+
+.title-text {
+  font-size: large;
+  font-weight: bold;
+}
+
+.icon-text {
+  margin-left: 20rpx;
+}
+
+/* tab */
+
 .swiper-main {
   width: 100%;
 }
@@ -23,7 +41,7 @@
   /* margin-top: 40rpx; */
   text-align: center;
   margin-bottom: 40rpx;
-  margin-top:40rpx;
+  margin-top: 40rpx;
 }
 
 .find-cell {
@@ -49,17 +67,11 @@
   min-height: 200rpx;
 }
 
-.title {
-  display: flex;
+.card-title {
   margin-top: 5rpx;
   margin-bottom: 10rpx;
 }
 
-.title-text {
-  margin-left: 20rpx;
-  font-size: large;
-  font-weight: bold;
-}
 
 /* 我的 */
 .info-cell-parent {

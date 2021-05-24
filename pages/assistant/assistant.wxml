@@ -34,9 +34,9 @@
         <!-- 首页 开始 -->
         <view class="swiper-home">
           <view class="card" wx:for="{{homeList}}" wx:key="time">
-            <view class="title">
+            <view class="card-title icon-cell">
               <mp-icon icon="{{item.avatar}}" color="black" size="{{25}}"></mp-icon>
-              <view class="title-text">{{item.title}} </view>
+              <view class="title-text icon-text">{{item.title}} </view>
               <view wx:if="{{item.read == 'false'}}">
                 <mp-badge style="margin-left: 5px;" />
               </view>
@@ -67,10 +67,10 @@
               <mp-cell link hover bindtap="navigateToInfo">
                 个人信息
               </mp-cell>
-              <mp-cell link hover>
-                绑定智慧校园
+              <mp-cell link hover bindtap="navigateToNjupt">
+                智慧校园
               </mp-cell>
-              <mp-cell link hover>
+              <mp-cell link hover bindtap="navigateToSetting">
                 设置
               </mp-cell>
             </mp-cells>

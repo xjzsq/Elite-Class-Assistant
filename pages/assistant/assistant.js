@@ -106,6 +106,18 @@ Page({
     })
   },
 
+  navigateToNjupt: function(e) {
+    wx.navigateTo({
+      url: '../njupt/njupt',
+    })
+  },
+
+  navigateToSetting: function(e) {
+    wx.navigateTo({
+      url: '../setting/setting',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
