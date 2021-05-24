@@ -1,0 +1,68 @@
+/* pages/assistant/assistant.wxss */
+.swiper-main {
+  width: 100%;
+}
+
+/* 首页 */
+
+.swiper-home {
+  padding-top: 20rpx;
+}
+
+.card {
+  margin: 30rpx;
+  /* margin-bottom: 40rpx; */
+  padding: 20rpx 30rpx;
+  /* border: 2rpx solid #cdcfcf; */
+  border-radius: 10rpx;
+  /* box-shadow: 5rpx 5rpx 5rpx #cdcfcf; */
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+  position: relative;
+  background-color: #fff;
+  min-height: 200rpx;
+}
+
+.title {
+  display: flex;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+}
+
+.title-text {
+  margin-left: 20rpx;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* 我的 */
+.info-cell-parent {
+  display: flex;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.avatar-parent {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.stu_id {
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 5rpx;
+  margin-left: 30rpx;
+  font-size: 40rpx;
+}
