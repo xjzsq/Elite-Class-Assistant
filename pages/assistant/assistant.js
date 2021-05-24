@@ -13,20 +13,53 @@ Page({
       "name": "李魔龙",
       "stu_id": "Q19010199"
     },
+    findList: [{
+        "content":"信息公开",
+        "icon":"info",
+        "src":""
+      },
+      {
+        "content":"作业提醒",
+        "icon":"pencil",
+        "src":""
+      },
+      {
+        "content":"日程提醒",
+        "icon":"time",
+        "src":""
+      },
+      {
+        "content":"课程表",
+        "icon":"photo-wall",
+        "src":""
+      },
+      {
+        "content":"图书馆",
+        "icon":"note",
+        "src":""
+      },
+      {
+        "content":"问题反馈",
+        "icon":"comment",
+        "src":""
+      }
+    ],
     homeList: [{
         "avatar": "pencil",
         "title": "填写信息通知",
+        "time": 100,
         "content": "需要填写以下信息：家长联系方式",
         "read": "false"
       },
       {
         "avatar": "info",
         "title": "作业提醒",
+        "time": 101,
         "content": "量子力学作业",
         "read": "true"
       }
     ],
-    list: [{
+    tabbarList: [{
         "text": "发现",
         "iconPath": "/utils/images/compass.png",
         "selectedIconPath": "/utils/images/compass_sel.png",
@@ -52,7 +85,7 @@ Page({
     // console.log('tab change', e)
     if (this.data.current_swiper != (e.detail.index)) {
       this.setData({
-        bar_title: this.data.list[e.detail.index]["text"],
+        bar_title: this.data.tabbarList[e.detail.index]["text"],
         current_swiper: e.detail.index
       });
     }
@@ -62,9 +95,15 @@ Page({
     // console.log('swiper change', e)
     if (this.data.current_swiper != (e.detail.current))
       this.setData({
-        bar_title: this.data.list[e.detail.current]["text"],
+        bar_title: this.data.tabbarList[e.detail.current]["text"],
         current_swiper: e.detail.current
       });
+  },
+
+  navigateToInfo: function(e) {
+    wx.navigateTo({
+      url: '../information/information',
+    })
   },
 
   /**
@@ -80,8 +119,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log(wx.getSystemInfoSync().statusBarHeight);
-    console.log(wx.getMenuButtonBoundingClientRect());
+
   },
 
   /**

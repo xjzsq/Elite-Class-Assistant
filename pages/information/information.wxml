@@ -1,0 +1,8 @@
+<!--pages/information/information.wxml-->
+<mp-navigation-bar loading="{{loading}}" show="{{true}}" animated="{{true}}" color="{{black}}" background="{{'white'}}"
+  title="{{'个人信息'}}" back="{{true}}">
+</mp-navigation-bar>
+
+<view class="page">
+  <text>pages/information/information.wxml</text>
+</view>

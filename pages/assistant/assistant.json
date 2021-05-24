@@ -10,6 +10,5 @@
     "mp-row": "@miniprogram-component-plus/row",
     "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
   },
-  "navigationStyle": "custom",
-  "navigationBarTitleText": "UI组件库"
+  "navigationStyle": "custom"
 }

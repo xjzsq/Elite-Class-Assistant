@@ -7,12 +7,13 @@
 
 .search-bar {
   padding: 0 40rpx;
-  background-color: #fff;
+  background-color: transparent;
   box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%);
-  padding-bottom:20rpx;
+  padding-bottom: 20rpx;
 }
 
-.search-bar>.weui-search-bar__form {
+.weui-search-bar__form {
+  /* .search-bar> */
   border: 1px rgb(0 128 0 / 20%) solid;
   /* box-sizing: border-box; */
   /* box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%); */
@@ -21,10 +22,12 @@
 .col {
   /* margin-top: 40rpx; */
   text-align: center;
+  margin-bottom: 40rpx;
+  margin-top:40rpx;
 }
 
-.find-cell{
-  margin-top:-10rpx;
+.find-cell {
+  margin-top: -10rpx;
 }
 
 /* 首页 */
