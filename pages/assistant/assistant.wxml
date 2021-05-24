@@ -7,7 +7,38 @@
     <swiper bindchange="swiper-change" class="swiper-main" style="height:{{main_height}}" bindchange="swiperChange"
       current="{{current_swiper}}" duration="250">
       <swiper-item>
-        <view class="swiper-find">{{"发现页面"}}</view>
+        <!-- 发现 开始 -->
+        <view class="swiper-find">
+          <mp-searchbar ext-class="search-bar" bindselectresult="selectResult" search="{{search}}"
+                  cancel="{{true}}"></mp-searchbar>
+          <view class="find-cell">
+            <mp-cells ext-class="find-cells">
+              <mp-cell>
+                <mp-row>
+                  <mp-col span="{{8}}">
+                    <view class="col">
+                      <mp-icon icon="info" color="black" size="{{30}}"></mp-icon>
+                      <view>信息公开</view>
+                    </view>
+                  </mp-col>
+                  <mp-col span="{{8}}">
+                    <view class="col">
+                      <mp-icon icon="info" color="black" size="{{30}}"></mp-icon>
+                      <view>信息公开</view>
+                    </view>
+                  </mp-col>
+                  <mp-col span="{{8}}">
+                    <view class="col">
+                      <mp-icon icon="info" color="black" size="{{30}}"></mp-icon>
+                      <view>信息公开</view>
+                    </view>
+                  </mp-col>
+                </mp-row>
+              </mp-cell>
+            </mp-cells>
+          </view>
+        </view>
+        <!-- 发现 结束 -->
       </swiper-item>
       <swiper-item>
         <!-- 首页 开始 -->
