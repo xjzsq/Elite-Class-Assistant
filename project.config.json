@@ -30,8 +30,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "bundle": false,
-    "useIsolateContext": true,
+    "useIsolateContext": false,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
@@ -40,8 +39,8 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.0.4",
-  "appid": "wxcf51473da5ad88a4",
+  "libVersion": "2.16.1",
+  "appid": "wx1ee685cba25bb7b7",
   "projectname": "%E8%8B%B1%E6%89%8D%E7%8F%AD%E5%B0%8F%E5%8A%A9%E6%89%8B",
   "debugOptions": {
     "hidedInDevtools": []
@@ -52,6 +51,7 @@
     "servePath": ""
   },
   "isGameTourist": false,
+  "cloudbaseRoot": "cloudbase/",
   "condition": {
     "search": {
       "list": []

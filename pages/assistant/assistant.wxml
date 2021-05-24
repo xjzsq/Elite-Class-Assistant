@@ -1,0 +1,66 @@
+<!--pages/assistant/assistant.wxml-->
+<mp-navigation-bar loading="{{loading}}" slot="left" show="{{true}}" animated="{{true}}" color="{{color}}"
+  background="{{background}}" title="{{bar_title}}" back="{{false}}">
+</mp-navigation-bar>
+<view class="page">
+  <view>
+    <swiper bindchange="swiper-change" class="swiper-main" style="height:{{main_height}}" bindchange="swiperChange"
+      current="{{current_swiper}}" duration="250">
+      <swiper-item>
+        <view class="swiper-find">{{"发现页面"}}</view>
+      </swiper-item>
+      <swiper-item>
+        <!-- 首页 开始 -->
+        <view class="swiper-home">
+          <view class="card" wx:for="{{homeList}}">
+            <view class="title">
+              <mp-icon icon="{{item.avatar}}" color="black" size="{{25}}"></mp-icon>
+              <view class="title-text">{{item.title}} </view>
+              <view wx:if="{{item.read == 'false'}}">
+                <mp-badge style="margin-left: 5px;" />
+              </view>
+            </view>
+            <view class="content">{{item.content}}</view>
+          </view>
+        </view>
+        <!-- 首页 结束 -->
+      </swiper-item>
+      <swiper-item>
+        <!-- 我的 开始 -->
+        <view class="swiper-mine">
+          <view class="info-cell">
+            <mp-cells ext-class="info-cells">
+              <mp-cell>
+                <view class="info-cell-parent">
+                  <view class="avatar-parent">
+                    <image class="avatar-image" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
+                  </view>
+                  <view class="name-parent">
+                    <view class="name">{{userInfo.name}}</view>
+                    <view class="stu_id">{{"学号："+ userInfo.stu_id}}</view>
+                  </view>
+                </view>
+              </mp-cell>
+            </mp-cells>
+            <mp-cells ext-class="setting-cells">
+              <mp-cell link hover>
+                个人信息
+              </mp-cell>
+              <mp-cell link hover>
+                绑定智慧校园
+              </mp-cell>
+              <mp-cell link hover>
+                设置
+              </mp-cell>
+            </mp-cells>
+          </view>
+        </view>
+        <!-- 我的 结束 -->
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"
+    current="{{current_swiper}}">
+  </mp-tabbar>
+</view>
