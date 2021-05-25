@@ -14,34 +14,39 @@ Page({
       "stu_id": "Q19010199"
     },
     findList: [{
-        "content":"信息公开",
-        "icon":"info",
-        "src":""
+        "content": "信息公开",
+        "icon": "info",
+        "src": ""
       },
       {
-        "content":"作业提醒",
-        "icon":"pencil",
-        "src":""
+        "content": "作业提醒",
+        "icon": "pencil",
+        "src": ""
       },
       {
-        "content":"日程提醒",
-        "icon":"time",
-        "src":""
+        "content": "日程提醒",
+        "icon": "time",
+        "src": ""
       },
       {
-        "content":"课程表",
-        "icon":"photo-wall",
-        "src":""
+        "content": "课程表",
+        "icon": "photo-wall",
+        "src": ""
       },
       {
-        "content":"图书馆",
-        "icon":"note",
-        "src":""
+        "content": "图书馆",
+        "icon": "note",
+        "src": ""
       },
       {
-        "content":"问题反馈",
-        "icon":"comment",
-        "src":""
+        "content": "问题反馈",
+        "icon": "comment",
+        "src": ""
+      },
+      {
+        "content": "一键出校",
+        "icon": "share",
+        "src": ""
       }
     ],
     homeList: [{
@@ -100,19 +105,19 @@ Page({
       });
   },
 
-  navigateToInfo: function(e) {
+  navigateToInfo: function (e) {
     wx.navigateTo({
       url: '../information/information',
     })
   },
 
-  navigateToNjupt: function(e) {
+  navigateToNjupt: function (e) {
     wx.navigateTo({
       url: '../njupt/njupt',
     })
   },
 
-  navigateToSetting: function(e) {
+  navigateToSetting: function (e) {
     wx.navigateTo({
       url: '../setting/setting',
     })
