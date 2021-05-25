@@ -1,2 +1,5 @@
 /* pages/information/information.wxss */
 
+.cell-left {
+  padding-left: 30rpx;
+}
