@@ -4,16 +4,18 @@
 </mp-navigation-bar>
 
 <view class="page">
-  <mp-cells ext-class="base-cells" title="基本信息">
-    <view wx:for="{{infoList}}" wx:for-index="key" wx:for-item="value">
-      <mp-cell>
-        <mp-col span="{{9}}">
-          <view class="cell-left">{{key}}</view>
-        </mp-col>
-        <mp-col span="{{15}}">
-          {{value}}
-        </mp-col>
-      </mp-cell>
-    </view>
-  </mp-cells>
+  <view wx:for="{{infoType}}" wx:for-index="typeKey" wx:for-item="typeValue">
+    <mp-cells ext-class="base-cells" title="{{typeKey}}">
+      <view wx:for="{{typeValue}}" wx:for-index="key" wx:for-item="value">
+        <mp-cell>
+          <mp-col span="{{9}}">
+            <view class="cell-left">{{key}}</view>
+          </mp-col>
+          <mp-col span="{{15}}">
+            <view class="cell-left">{{infoList[value]||'待完善'}}</view>
+          </mp-col>
+        </mp-cell>
+      </view>
+    </mp-cells>
+  </view>
 </view>

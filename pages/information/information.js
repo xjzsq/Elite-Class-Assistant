@@ -53,7 +53,7 @@ Page({
         "社区/村": "village"
       },
       "其他信息": {
-
+        "暂无":"gugugu"
       }
     },
     infoList: {
