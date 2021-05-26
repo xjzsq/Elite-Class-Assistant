@@ -3,3 +3,9 @@
 .cell-left {
   padding-left: 30rpx;
 }
+
+.cell-right {
+  /* color:gray; */
+  /* font-size:small; */
+  padding-left: 30rpx;
+}

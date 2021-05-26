@@ -12,7 +12,7 @@
             <view class="cell-left">{{key}}</view>
           </mp-col>
           <mp-col span="{{15}}">
-            <view class="cell-left">{{infoList[value]||'待完善'}}</view>
+            <view class="cell-right">{{infoList[value]||'待完善'}}</view>
           </mp-col>
         </mp-cell>
       </view>
