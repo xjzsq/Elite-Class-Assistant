@@ -5,7 +5,6 @@
 }
 
 .cell-right {
-  /* color:gray; */
-  /* font-size:small; */
+  color:gray;
   padding-left: 30rpx;
 }
