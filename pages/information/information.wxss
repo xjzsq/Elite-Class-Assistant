@@ -3,3 +3,8 @@
 .cell-left {
   padding-left: 30rpx;
 }
+
+.cell-right {
+  color:gray;
+  padding-left: 30rpx;
+}
