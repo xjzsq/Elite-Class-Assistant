@@ -7,14 +7,16 @@
   <view wx:for="{{infoType}}" wx:for-index="typeKey" wx:for-item="typeValue">
     <mp-cells ext-class="base-cells" title="{{typeKey}}">
       <view wx:for="{{typeValue}}" wx:for-index="key" wx:for-item="value">
-        <mp-cell>
-          <mp-col span="{{9}}">
-            <view class="cell-left">{{key}}</view>
-          </mp-col>
-          <mp-col span="{{15}}">
-            <view class="cell-left">{{infoList[value]||'待完善'}}</view>
-          </mp-col>
-        </mp-cell>
+        <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+          <mp-cell>
+            <mp-col span="{{9}}">
+              <view class="cell-left">{{key}}</view>
+            </mp-col>
+            <mp-col span="{{15}}">
+              <view class="cell-left">{{infoList[value]||'待完善'}}</view>
+            </mp-col>
+          </mp-cell>
+        </mp-slideview>
       </view>
     </mp-cells>
   </view>

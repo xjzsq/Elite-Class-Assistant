@@ -51,7 +51,8 @@
 /* 首页 */
 
 .swiper-home {
-  padding-top: 20rpx;
+  margin-top: 20rpx;
+  width: 100%;
 }
 
 .card {
@@ -72,6 +73,12 @@
   margin-bottom: 10rpx;
 }
 
+.card-time {
+  margin-bottom: 10rpx;
+  margin-left: 5rpx;
+  /* font-size: small; */
+  color: gray;
+}
 
 /* 我的 */
 .info-cell-parent {

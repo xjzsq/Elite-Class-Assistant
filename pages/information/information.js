@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    slideButtons: [{
+      text: '修改',
+      type: 'warn'
+    }],
     infoType: {
       "基本信息": {
         "姓名": "name",
@@ -53,7 +57,7 @@ Page({
         "社区/村": "village"
       },
       "其他信息": {
-        "暂无":"gugugu"
+        "暂无": "gugugu"
       }
     },
     infoList: {

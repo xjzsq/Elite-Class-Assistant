@@ -4,8 +4,8 @@
     "mp-cells": "weui-miniprogram/cells/cells",
     "mp-cell": "weui-miniprogram/cell/cell",
     "mp-col": "@miniprogram-component-plus/col",
-    "mp-row": "@miniprogram-component-plus/row"
-
+    "mp-row": "@miniprogram-component-plus/row",
+    "mp-slideview": "weui-miniprogram/slideview/slideview"
   },
   "navigationStyle": "custom"
 }

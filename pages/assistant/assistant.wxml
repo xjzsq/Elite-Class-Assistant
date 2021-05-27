@@ -32,18 +32,20 @@
       </swiper-item>
       <swiper-item>
         <!-- 首页 开始 -->
-        <view class="swiper-home">
+        <scroll-view class="swiper-home" style="height:{{main_height}}" scroll-y="{{true}}"
+          refresher-enabled="{{true}}">
           <view class="card" wx:for="{{homeList}}" wx:key="time">
             <view class="card-title icon-cell">
-              <mp-icon icon="{{item.avatar}}" color="black" size="{{25}}"></mp-icon>
+              <mp-icon icon="{{item.avatar}}" color="{{item.color}}" size="{{25}}"></mp-icon>
               <view class="title-text icon-text">{{item.title}} </view>
               <view wx:if="{{item.read == 'false'}}">
                 <mp-badge style="margin-left: 5px;" />
               </view>
             </view>
+            <view class="card-time">{{item.time}}</view>
             <view class="content">{{item.content}}</view>
           </view>
-        </view>
+        </scroll-view>
         <!-- 首页 结束 -->
       </swiper-item>
       <swiper-item>

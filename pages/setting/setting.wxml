@@ -4,5 +4,19 @@
 </mp-navigation-bar>
 
 <view class="page">
-  <text>pages/setting/setting.wxml</text>
+  <view class="weui-cells__title">界面</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">夜间模式</view>
+      <view class="weui-cell__ft">
+        <switch checked="{{isDarkMode}}" bindchange="switchDarkMode" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">背景颜色</view>
+      <view class="weui-cell__ft">
+        <color-picker class="color-picker" colorData="{{colorData}}" rpxRatio="{{rpxRatio}}" bindchangecolor="onChangeColor"></color-picker>
+      </view>
+    </view>
+  </view>
 </view>

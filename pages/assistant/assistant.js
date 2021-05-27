@@ -52,14 +52,16 @@ Page({
     homeList: [{
         "avatar": "pencil",
         "title": "填写信息通知",
-        "time": 100,
+        "color": "black",
+        "time": "2021-05-27 3:36",
         "content": "需要填写以下信息：家长联系方式",
         "read": "false"
       },
       {
         "avatar": "info",
         "title": "作业提醒",
-        "time": 101,
+        "color": "red",
+        "time": "2021-05-27 3:35",
         "content": "量子力学作业",
         "read": "true"
       }
