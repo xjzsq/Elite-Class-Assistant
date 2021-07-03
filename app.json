@@ -17,5 +17,6 @@
   "sitemapLocation": "sitemap.json",
   "useExtendedLib": {
     "weui": true
-  }
+  },
+  "cloud": true
 }

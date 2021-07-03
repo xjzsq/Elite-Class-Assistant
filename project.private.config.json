@@ -23,6 +23,12 @@
           "pathName": "pages/setting/setting",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/njupt/njupt",
+          "pathName": "pages/njupt/njupt",
+          "query": "",
+          "scene": null
         }
       ]
     }

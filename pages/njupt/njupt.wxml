@@ -3,6 +3,34 @@
   title="{{'智慧校园'}}" back="{{true}}">
 </mp-navigation-bar>
 
-<view class="page">
-  <text>pages/njupt/njupt.wxml</text>
-</view>
+
+<mp-form-page title="登录" subtitle="智慧校园登录">
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells title="" footer="">
+      <mp-cell prop="username" title="学号" ext-class="">
+        <input bindinput="formUsernameChange" data-field="username" class="weui-input" placeholder="请输入学号" />
+      </mp-cell>
+      <mp-cell prop="password" title="密码" ext-class="">
+        <input bindinput="formPasswordChange" data-field="password" password="true" class="weui-input"
+          placeholder="密码包含特殊字符" />
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <!-- <mp-checkbox-group slot="tips" bindchange="bindAgreeChange">
+    <label class="weui-agree" for="weuiAgree">
+      <mp-checkbox class="weui-agree_checkbox" label="233" value="agree" checked="{{isAgree}}" />
+      阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+    </label>
+  </mp-checkbox-group> -->
+  <view slot="button">
+    <button class="weui-btn" type="primary" bindtap="submitForm" disabled="{{hasSubmit}}">确定</button>
+  </view>
+</mp-form-page>
+<!-- <view class="page">
+  <mp-cells title="请填写账号密码">
+    <mp-cell prop="qq" title="qq" ext-class="">
+      <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入qq" />
+    </mp-cell>
+  </mp-cells>
+
+</view> -->
