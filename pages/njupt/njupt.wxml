@@ -4,7 +4,7 @@
 </mp-navigation-bar>
 
 
-<mp-form-page title="登录" subtitle="智慧校园登录">
+<mp-form-page title="登录" subtitle="请使用智慧校园账号、密码登录">
   <mp-form id="form" rules="{{rules}}" models="{{formData}}">
     <mp-cells title="" footer="">
       <mp-cell prop="username" title="学号" ext-class="">

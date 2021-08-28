@@ -23,7 +23,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -35,10 +35,11 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "showES6CompileOption": false
+    "showES6CompileOption": false,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.16.1",
+  "libVersion": "2.19.2",
   "appid": "wx1ee685cba25bb7b7",
   "projectname": "%E8%8B%B1%E6%89%8D%E7%8F%AD%E5%B0%8F%E5%8A%A9%E6%89%8B",
   "debugOptions": {
